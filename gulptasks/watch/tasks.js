@@ -33,6 +33,10 @@ module.exports.watch = function watch() {
     runSequence('javascript.specifics')
   });
 
+  gwatch(SOURCES_PATH + 'css/includes/**/*.scss', function() {
+    runSequence('styles.globals')
+  });
+
   gwatch(SOURCES_PATH + 'css/globals/**/*.scss', function() {
     runSequence('styles.globals')
   });

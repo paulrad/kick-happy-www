@@ -1,0 +1,14 @@
+@import 'colors.scss';
+
+.mdl-layout__header,
+.mdl-layout__tab-bar {
+  background-color: $primary;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+  background: $secondary;
+}
+
+.mdl-button.mdl-button--colored {
+  color: $primary;
+}
