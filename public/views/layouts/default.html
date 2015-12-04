@@ -1,0 +1,40 @@
+<!doctype HTML>
+<html>
+<head>
+  <% block head_meta %>
+    <% include '../partials/metas.html' %>
+  <% endblock %>
+  <% block head_stylesheets %>
+    <link rel="dns-prefetch" href="<$ media('') $>">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link type="text/css" rel="stylesheet" href="<$ media('css/globals/builds.min.css') $>">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <% endblock %>
+  <% block head_scripts %>
+    <% include '../partials/head_scripts.html' %>
+  <% endblock %>
+</head>
+<body class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+
+  <% block header %>
+    <% include '../partials/header.html' %>
+  <% endblock %>
+
+  <main class="mdl-layout__content">
+    <% block content %><% endblock %>
+  </main>
+
+  <% block footer %>
+    <% include '../partials/footer.html' %>
+  <% endblock %>
+
+  <% if (production === false) %>
+  <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  <% endif %>
+
+  <% block foot_scripts %>
+    <script src="<$ media('js/globals/builds.min.js') $>"></script>
+  <% endblock %>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "kick-happy-www",
+  "main": "index.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/paulrad/kick-happy-www",
+  "authors": [
+    "Paul Rad <paul@paulrad.com>"
+  ],
+  "description": "A simple kickstarter for build moderns fronts",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "material-design-lite": "~1.0.6"
+  }
+}

@@ -1,0 +1,22 @@
+<%
+set meta = {
+  title: "Default template"
+}
+%>
+<% extends '../../layouts/default.html' %>
+
+ <% block head_stylesheets %>
+  <% parent %>
+  <link type="text/css" rel="stylesheet" href="<$ media('css/specifics/mobile/builds.min.css') $>">
+ <% endblock %>
+
+<% block content %>
+  <main class="mdl-layout__content">
+    <% include 'sections/content.html' %>
+  </main>
+<% endblock %>
+
+<% block foot_scripts %>
+  <% parent %>
+  <script src="<$ media('js/specifics/mobile/builds.min.js') $>"></script>
+<% endblock %>
