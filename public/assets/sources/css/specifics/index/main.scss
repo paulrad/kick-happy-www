@@ -1,6 +1,6 @@
 section#heading {
   position: relative;
-  min-height: 500px;
+  height: 500px;
 
   .content {
     position: absolute;
@@ -19,6 +19,18 @@ section#heading {
       color: white;
       font-size: 4em;
       font-weight: 300;
+    }
+  }
+
+  @media (max-width: 420px) {
+    min-height: 200px;
+
+    .content h1 {
+      position: absolute;
+      top: 50%;
+      margin-top: -1.25em;
+      line-height: 1.2em;
+      font-weight: 2.5em;
     }
   }
 }
