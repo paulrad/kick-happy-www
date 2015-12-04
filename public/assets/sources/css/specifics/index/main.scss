@@ -1,2 +1,30 @@
-body {
+section#heading {
+  position: relative;
+  min-height: 500px;
+
+  .content {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 100;
+
+    h1 {
+      padding: 0;
+      margin: 0;
+      line-height: 500px;
+      color: white;
+      font-size: 4em;
+      font-weight: 300;
+    }
+  }
+}
+
+main {
+  section {
+    min-height: 100vh;
+  }
 }

@@ -1,16 +1,11 @@
-<# @see http://www.getmdl.io/components/index.html#layout-section/header #>
-
-<header class="mdl-layout__header">
-  <div class="mdl-layout__header-row">
-    
-    <span class="mdl-layout-title">Title</span>
+<# main header #>
+<nav>
+  <div class="nav-wrapper">
+    <a href="#" class="brand-logo"><span class="icon-star">My Company</span></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/why">Why</a></li>
+      <li><a href="/how">How</a></li>
+      <li><a href="/buy">Buy</a></li>
+    </ul>
   </div>
-
-  <% include 'navigation.html' %>
-
-  </div>
-</header>
-
-<div class="mdl-layout__drawer">
-  <span class="mdl-layout-title">Title</span>
-</div>
+</nav>

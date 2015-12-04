@@ -5,13 +5,26 @@ set meta = {
 %>
 <% extends '../../layouts/default.html' %>
 
- <% block head_stylesheets %>
+<% block head_stylesheets %>
   <% parent %>
   <link type="text/css" rel="stylesheet" href="<$ media('css/specifics/index/builds.min.css') $>">
- <% endblock %>
+<% endblock %>
+
+<% block heading %>
+  <section id="heading">
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="https://placeimg.com/1000/480/nature">
+      </div>
+    </div>
+    <div class="content">
+      <h1>Welcome... home ;)</h1>
+    </div>
+  </section>
+<% endblock %>
 
 <% block content %>
-  <main class="mdl-layout__content">
+  <main>
     <% include 'sections/content.html' %>
   </main>
 <% endblock %>
